@@ -12,6 +12,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
+  --background-origin: #2f303a;
 }
 
 body {
@@ -59,12 +60,18 @@ body {
 }
 .list a:hover,
 .list a:focus {
-  color: #23579b;
-}
-
-.site-nav .auth-nav-email {
   color: var(--accent-color);
 }
+
+.contact .auth-nav-email,
+.contact .auth-nav-tel {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color:var(--primary-text-color);
+}
+
 
 .section-title {
   color: var(--title-text-color);
@@ -82,9 +89,7 @@ class="hero" {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: #ffffff;
-
   background: #2f303a;
 }
 
@@ -97,13 +102,12 @@ class="hero" {
   line-height: 1.88;
   display: flex;
   align-items: center;
-
   letter-spacing: 0.06em;
 }
 
 .button:hover,
 .button:focus {
-  color: var(--primary-text-color);
+  background: var(--background-origin);
 }
 
 /*Feature list*/
@@ -151,22 +155,14 @@ class="hero" {
 
 /*Footer*/
 .footer {
-  background: #2f303a;
+  background: var(--background-origin);
 }
-.adress {
-  color: #ffffff;
-}
-.adress > a {
-  color: #ffffff;
-}
+
 .footer > .logo {
   color: #ffffff;
-  font-size: 26px;
-  line-height: 1.19;
-
-  /* identical to box height */
 }
 .adress {
+  color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
@@ -184,7 +180,7 @@ class="hero" {
   /* identical to box height, or 162% */
   text-align: center;
 }
-.portfolio .link .title {
+.title-portfolio {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -197,12 +193,36 @@ class="hero" {
   text-decoration: none;
 }
 
-.portfolio .link .description {
+.desc-portfolio {
   font-size: 16px;
   line-height: 1.87;
   /* identical to box height, or 187% */
-
   letter-spacing: 0.03em;
-
   color: var(--primary-text-color);
 }
+.button-filter.current {
+  color: #FFFFFF;
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+/* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-filter {
+  color: var(--title-text-color);
+  background-color: #F5F4FA;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+/* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+  color: #FFFFFF;
+  background-color:  var(--accent-color);
